@@ -1,0 +1,14 @@
+{% extends 'base.html' %} 
+{%block title%}Story Form{%endblock%} 
+{% block content%}
+    <h1>Madlibs</h1>
+    <h2>Let's make a story!</h2>
+    <form action="/story">
+      {%for word in words%}
+      <label>{{word.capitalize()}}:</label>
+      <input type="text" placeholder="{{word}}" name="{{word}}" />
+      <br />
+      {%endfor%}
+      <button>Submit</button>
+    </form>
+{%endblock%}
