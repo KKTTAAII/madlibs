@@ -1,15 +1,15 @@
 {% extends 'base.html' %} 
 {%block title%}Story Form{%endblock%} 
 {% block content%}
-    <h1>Madlibs</h1>
-    <h2>Choose Your Story Template</h2>
-    <form action="/storyform">
-      <label>Story Templates:</label>
-      <select id='stories'>
-        <option value='onceUponATime' name='onceUponATime'>Once Upon A Time...</option>
-        <option value='loveStory' name='loveStory'>My Love Story</option>
-        <option value='myLocker' name='myLocker'>My myLocker...</option>
+    <h1 class='head'>Madlibs</h1>
+    <h2 class='secondhead'>Choose Your Story Template</h2>
+    <form action="/storyform" class='form'>
+      <label class='label'>Story Templates:</label>
+      <select name='template'>
+        <option value='Once Upon A Time...'>Once Upon A Time...</option>
+        <option value='My Love Story'>My Love Story</option>
+        <option value='My myLocker...'>My myLocker...</option>
       </select>
-      <button>Submit</button>
+      <button class='btn'>Submit</button>
     </form>
 {%endblock%}

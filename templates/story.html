@@ -1,6 +1,37 @@
 {% extends 'base.html' %} 
 {%block title%}Your Story{%endblock%} 
-{% block content%}
-    <h1>Here is your story!</h1>
-    <p>{{story}}</p>
+{%block content%}
+<h1 class="head">Here is your story!</h1>
+<p class="story">{{story}}</p>
+{%if template == 'Once Upon A Time...' %}
+  <iframe
+    src="https://giphy.com/embed/iH1MWb19UHSqk"
+    width="100%"
+    height="100%"
+    style="position: absolute"
+    frameborder="0"
+    class="giphy-embed"
+    allowfullscreen
+  ></iframe>
+{%endif%} 
+{%if template == 'My Love Story' %}
+<iframe
+  src="https://giphy.com/embed/kW12R0mPFuiVG"
+  width="480"
+  height="270"
+  frameborder="0"
+  class="giphy-embed"
+  allowfullscreen
+></iframe>
+{%endif%} 
+{%if template == 'My myLocker...' %}
+<iframe
+  src="https://giphy.com/embed/DXsoRs2hTFZU0robp6"
+  width="480"
+  height="480"
+  frameborder="0"
+  class="giphy-embed"
+  allowfullscreen
+></iframe>
+{%endif%} 
 {%endblock%}

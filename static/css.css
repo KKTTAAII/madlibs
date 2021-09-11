@@ -1,0 +1,37 @@
+.body {
+    font-family: 'Urbanist', sans-serif;
+    background-color: thistle;
+}
+
+.head, .secondhead, .form, .story {
+    text-align: center;
+}
+
+.head {
+    font-size: 30px;
+    
+}
+
+.btn {
+    border-style: none;
+    background-color: rgb(41, 105, 201);
+    color: whitesmoke;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.input, .btn {
+    margin-top: 10px;
+}
+
+.story {
+    font-size: 20px;
+}
+
+.giphy-embed {
+    margin: 0 auto;
+    display:block;
+}
